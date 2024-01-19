@@ -7,7 +7,7 @@
        width: 1000px;
        margin: 30px auto;
        display: grid;
-       gap: 20px;
+       gap: 10px;
        grid-template-columns: 3fr 1fr 2fr 1fr;
        grid-template-rows: repeat(3, 100px);
 }
@@ -27,4 +27,13 @@
 }
 .pictures .pic:nth-child(4){
     grid-row: 1/span 2;
+}
+.pictures .pic:nth-child(7){
+    grid-row: 3/span 2;
+}
+.pictures .pic:nth-child(8){
+    grid-row: 3/ span 2;
+}
+.img {
+    background-position: 100%;
 }

@@ -7,12 +7,21 @@
 .colorbox {
     width: 1000px;
     background-color: rgb(59, 212, 212);
-    height: 600px;
+    /* height: 600px; */
     margin: 50px auto;
     padding: 10px;
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr 1fr;
+    grid-template-rows: repeat(3, 200px);   
+    gap: 10px;
 }
 .box {
-    width: 100px;
-    height: 100px;
+    /* width: 100px; */
+    /* height: 100px; */
     background-color: black;
+    color: white;
+    border: 1px solid gold;
+}
+.box:nth-child(4){
+    grid-row: 1/span 3;
 }
